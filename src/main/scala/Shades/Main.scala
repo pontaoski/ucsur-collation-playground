@@ -227,6 +227,13 @@ object Main extends IOWebApp:
                             children[Long](id =>
                                 editItem(store.get(id))
                             ) <-- store.ids,
+                            p("format:"),
+                            p("the first number (before the period/star) is the codepoint. you probably don't want to touch this."),
+                            p("the period/star indicates normal vs variable collation. glyphs should be normal and punctuation should be variable. you probably don't want to touch this."),
+                            p("the second number is L1 collation."),
+                            p("the third number is L2 collation."),
+                            p("the fourth number is L3 collation."),
+                            p("items are sorted in a sort of priority system."),
                         ),
                         div(
                             cls := "fl w-third",

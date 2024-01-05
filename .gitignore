@@ -1,3 +1,5 @@
-**/target
+/target
 .bloop
 .bsp
+/project/**/target
+!/target/scala-3.3.1/shades-fastopt/main.js

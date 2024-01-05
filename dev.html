@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		function codepointsOf(string) {
+			return [...string].map((cp) => cp.codePointAt(0))
+		}
+	</script>
+	<script defer src="target/scala-3.3.1/shades-fastopt/main.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+	<style>
+	@font-face {
+		font-family: "sitelenselikiwenjuniko";
+		src: url(sitelenselikiwenjuniko.eot);
+		src: url(sitelenselikiwenjuniko.ttf) format("truetype");
+	}
+	:root {
+		tab-size: 1;
+		font-size: 20pt;
+		font-family: "sitelenselikiwenjuniko";
+	}
+	textarea {
+		font-size: 12pt;
+		font-family: monospace;
+		white-space: pre;
+	}
+	code {
+		font-size: 10pt;
+	}
+	</style>
+</head>
+<body>
+	<div id="app" class="h-100"></div>
+</body>
+</html>
